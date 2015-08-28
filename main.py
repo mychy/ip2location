@@ -12,7 +12,7 @@ if __name__ == '__main__':
   ip = raw_input("Please input an ip address or file name:\n")
   if os.path.isfile(ip) is not True:
     result = ip2location.resolveIp2Geo(ip)
-    print ip2location.dumpInfo(ip, result)
+    print ip + ' ' + ip2location.dumpInfo(ip, result)
   else:
     fin = open(ip, 'r')
     fout = open(ip+'.resolved', 'w')

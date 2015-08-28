@@ -198,7 +198,7 @@ class QQWry(object):
     def __del__(self):
         if self.db:
             self.db.close()
-
+'''
 def main():
     dbpath = "qqwry.dat"
     ip = "183.61.60.23"
@@ -208,3 +208,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+    '''
